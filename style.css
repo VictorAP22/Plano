@@ -1,0 +1,41 @@
+*{margin: 0;
+ padding: 0;
+}
+
+:root{
+    --cor-branca: #FFFFFF;
+    --cor-cinza:#C0C0C0;
+    --cor-azul:#167BF7;
+    --cor-fundo: #00030C;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    color: var(--cor-branca);
+}
+
+.principal{
+    background-image: url("assets/Background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao{
+    background-color: var(--cor-azul);
+    border-radius: 5px;
+    padding: 1em;
+    text-decoration: none;
+    color: var(--cor-branca);
+    display: block;
+}
+
+.botao__secundario{
+    background-color: transparent;
+    border: 2px solid var(--cor-branca);
+}
