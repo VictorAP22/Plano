@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@700&family=Kanit:wght@300&family=Press+Start+2P&family=Saira+Semi+Condensed:wght@200&family=Source+Code+Pro:wght@800&display=swap');
+
 *{margin: 0;
  padding: 0;
 }
@@ -7,17 +9,23 @@
     --cor-cinza:#C0C0C0;
     --cor-azul:#167BF7;
     --cor-fundo: #00030C;
+
+    --fonte-principal: 'Inter';
 }
 
 body{
     background-color: var(--cor-fundo);
     color: var(--cor-branca);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .principal{
     background-image: url("assets/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
+    align-items: center;
 }
 
 .container{
@@ -26,6 +34,17 @@ body{
     grid-template-columns: 50% 50%;
 }
 
+.container__caixa{
+    margin: 0 6em;
+}
+.container__titulo{
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem{
+    margin: 1em 0 2em 0;
+}
 .container__botao{
     background-color: var(--cor-azul);
     border-radius: 5px;
@@ -33,9 +52,47 @@ body{
     text-decoration: none;
     color: var(--cor-branca);
     display: block;
+    margin-bottom: 1em;
 }
 
 .botao__secundario{
     background-color: transparent;
     border: 2px solid var(--cor-branca);
+    
+}
+
+.botao__aviso{
+    font-size: 12px;
+    color: var(--cor-cinza);
+}
+
+.secundario__imagem{
+    width: 80%;
+}
+
+.secundario {
+
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo{
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--cor-branca);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto{
+    color: var(--cor-cinza);
+    
+}
+
+.secundario__botao{
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao{
+    padding: 1.5em;
 }
